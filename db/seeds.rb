@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(name: "ROB", highscore: 1)
+User.create(name: "ROB")
 
-Score.create(user_id: 1, points: 1)
+Score.create(user_id: 1, wpm: 82, accuracy: 90, total_words: 49, correct_words: 45, incorrect_words: 4, characters_typed: 523)

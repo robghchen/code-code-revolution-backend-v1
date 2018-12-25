@@ -1,4 +1,4 @@
 class UserSerializer < ActiveModel::Serializer
-  attributes :id, :name, :highscore
+  attributes :id, :name
   has_many :scores
 end
