@@ -15,10 +15,15 @@
       end
     end
 
+    def create
+      @user = User.create(user_params)
+      render json: @user, status: :accepted
+    end
+
     private
 
     def user_params
-      params.permit(:name, :highscore)
+      params.permit(:name)
     end
 
     def find_user

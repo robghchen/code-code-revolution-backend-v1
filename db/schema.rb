@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2018_12_24_193816) do
   enable_extension "plpgsql"
 
   create_table "scores", force: :cascade do |t|
+    t.integer "score"
     t.integer "wpm"
     t.integer "accuracy"
     t.integer "total_words"
